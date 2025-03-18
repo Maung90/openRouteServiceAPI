@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OpenRouteService Map</title>
+	<link rel="stylesheet" href="assets/style.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<style>
+		#map {
+			height: 70vh;
+			width: 90%;
+		}
+	</style>
+</head>
+<body>
+	<div class="header bg-danger text-white p-4">
+		<h3>
+			OpenRouteService Map
+		</h3>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4">
+				<form>
+					<div class="mt-4"></div>
+					<div class="mb-3">
+						<label class="form-label" for="location1">
+							Location 1
+						</label>
+						<input type="text" class="form-control" placeholder="enter location " id="location1">
+					</div>
+					<div class="mb-3">
+						<label class="form-label" for="location2">
+							Location 2
+						</label>
+						<input type="text" class="form-control" placeholder="enter location " id="location2">
+					</div>
+					<div class="mb-3">
+						<button type="reset" class="btn btn-danger">
+							reset
+						</button>
+						<button type="button" class="btn btn-success" id="btn">
+							submit
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-8">
+				<div class="m-4" id="map"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	<script src="assets/script.js"></script>  
+	<script src="assets/app.js"></script>
+</body>
+</html>
